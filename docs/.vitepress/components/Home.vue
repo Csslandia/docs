@@ -71,10 +71,6 @@ h1::selection {
     background-position: 50%;
 }
 
-html:not(.dark) .aurora * {
-    opacity: 0.75;
-}
-
 @keyframes gradient {
     0% {
         background-position: 50%;

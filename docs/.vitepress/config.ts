@@ -24,7 +24,7 @@ export default defineConfig({
             provider: 'local'
         },
         editLink: {
-            pattern: "https://github.com/csslandia/docs/:path",
+            pattern: "https://github.com/csslandia/docs/edit/main/docs/:path",
             text: "Edit this page on GitHub",
         },
         nav: [
