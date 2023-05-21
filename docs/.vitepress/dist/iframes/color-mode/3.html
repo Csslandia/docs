@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body>
+        <div class="m-7">
+            <input
+                type="checkbox"
+                class="switch bd bg-none c-a"
+                id="mode-switch"
+            />
+        </div>
+
+        <script>
+            const html = document.documentElement;
+            const modeSwitch = document.querySelector("#mode-switch");
+            const mode = localStorage.getItem("color-mode");
+
+            if (
+                mode === "dark" ||
+                (mode === null &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches)
+            ) {
+                modeSwitch.checked = true;
+                html.classList.add("dark");
+            }
+
+            modeSwitch.addEventListener("change", (e) => {
+                if (e.currentTarget.checked) {
+                    html.classList.add("dark");
+                    localStorage.setItem("color-mode", "dark");
+                } else {
+                    html.classList.remove("dark");
+                    localStorage.setItem("color-mode", "light");
+                }
+            });
+        </script>
+    </body>
+</html>

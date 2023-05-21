@@ -1,0 +1,25 @@
+{
+  "name": "csslandia-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "compile": "csslandia",
+    "watch": "csslandia watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "purgecss": "^5.0.0",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "csslandia": "^1.0.0",
+    "vitepress": "^1.0.0-alpha.76"
+  }
+}

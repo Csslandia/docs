@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-none">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body class="bg-none">
+        <input type="text" />
+
+        <script>
+            let mode = localStorage.getItem("vitepress-theme-appearance");
+
+            const setMode = (mode) => {
+                if (
+                    mode === "dark" ||
+                    (mode === "auto" &&
+                        window.matchMedia("(prefers-color-scheme: dark)")
+                            .matches)
+                ) {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+            };
+
+            setMode(mode);
+
+            addEventListener("storage", (e) => {
+                if (e.key == "vitepress-theme-appearance") setMode(e.newValue);
+            });
+        </script>
+    </body>
+</html>

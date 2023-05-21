@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body>
+        <div class="m-7">
+            <button class="i-half-circle lg" id="mode-switch" />
+        </div>
+
+        <script>
+            const html = document.documentElement;
+            const modeSwitch = document.querySelector("#mode-switch");
+            let mode = localStorage.getItem("color-mode");
+
+            if (
+                mode === "dark" ||
+                (mode === null &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches)
+            ) {
+                html.classList.add("dark");
+                mode = "dark";
+            }
+
+            modeSwitch.addEventListener("click", () => {
+                if (mode === "dark") {
+                    html.classList.remove("dark");
+                    localStorage.setItem("color-mode", "light");
+                    mode = "light";
+                } else {
+                    html.classList.add("dark");
+                    localStorage.setItem("color-mode", "dark");
+                    mode = "dark";
+                }
+            });
+        </script>
+    </body>
+</html>

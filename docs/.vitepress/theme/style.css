@@ -1,0 +1,192 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-c-green: #0c5;
+    --vp-c-green-light: #1d6;
+    --vp-c-green-lighter: #2e7;
+    --vp-c-green-dark: #0b4;
+    --vp-c-green-darker: #0a3;
+    --vp-c-green-dimm-1: #0c51;
+    --vp-c-green-dimm-2: #0c53;
+    --vp-c-green-dimm-3: #0c58;
+}
+
+/**
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-font-family-base: 'Inter var', sans-serif;
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-button-brand-border: var(--vp-c-brand-light);
+    --vp-button-brand-text: var(--vp-c-white);
+    --vp-button-brand-bg: var(--vp-c-brand);
+    --vp-button-brand-hover-border: var(--vp-c-brand-light);
+    --vp-button-brand-hover-text: var(--vp-c-white);
+    --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+    --vp-button-brand-active-border: var(--vp-c-brand-light);
+    --vp-button-brand-active-text: var(--vp-c-white);
+    --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: linear-gradient(90deg, #fc0, 22%, #0c5, 78%, #0cf);
+}
+
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-custom-block-tip-border: var(--vp-c-brand);
+    --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+    --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+    --vp-custom-block-tip-border: var(--vp-c-brand);
+    --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+    --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+    --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+
+:root {
+    --vp-z-index-local-nav: 12;
+    --vp-z-index-nav: 13;
+    --vp-z-index-layout-top: 14;
+    --vp-z-index-backdrop: 15;
+    --vp-z-index-sidebar: 16;
+    --vp-z-index-footer: 17;
+}
+
+
+
+
+
+.responsive-table table {
+    display: table !important;
+    margin: 0;
+}
+
+.responsive-table th,
+.responsive-table td {
+    border: unset;
+    background-color: unset;
+    font-size: unset;
+    padding: 12px 16px;
+}
+
+.responsive-table tr {
+    border-top: unset;
+    border-color: inherit;
+}
+
+.responsive-table:not(.zebra) tr:nth-child(2n) {
+    background-color: unset !important;
+}
+
+table {
+    white-space: nowrap;
+}
+
+.w-5\% {
+    width: 5% !important;
+}
+
+
+.vp-code-group .tabs> :first-child {
+    width: unset !important;
+}
+
+.vp-doc a:hover {
+    text-decoration: none !important;
+}
+
+.vp-doc a:hover {
+    text-decoration: underline;
+}
+
+.vp-doc a.nn {
+    font-weight: unset;
+    color: var(--c-soft);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.slide {
+    transition: clip-path 0.4s ease-in-out,
+        max-height 0.4s ease-in-out,
+        pointer-events 0.4s step-end,
+        color 0.3s;
+}
+
+a.slide.open {
+    transition: clip-path 0.4s ease-in-out,
+        max-height 0.4s ease-in-out,
+        pointer-events 0.4s step-start,
+        color 0.3s;
+}
+
+.vp-doc a.nn:hover {
+    color: var(--c-strong);
+}
+
+.vp-doc a.bg-a,
+.vp-doc a.bg-a:hover {
+    color: var(--bg-strong);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+
+label {
+    line-height: 1.4;
+}
+
+.tabs> :first-child>*,
+:is(.form, .group) :is(input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    button),
+:is(input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    button).form,
+.b,
+.btn,
+.button {
+    line-height: 1.4;
+}
