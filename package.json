@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs --host",
-    "docs:build": "vitepress build docs",
+    "docs:build": "csslandia && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "compile": "csslandia",
     "watch": "csslandia watch"
