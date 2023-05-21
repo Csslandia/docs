@@ -23,39 +23,36 @@ lastUpdated: false
     />
 </div>
 
-<div
-    class="x-center"
-    style="width: calc(100vw - 40px); max-width: 1160px"
->
-    <div class="flexbox x-between y-center mt-5 mb-4 mx-2">
-        <div class="flexbox mob:x-right mob:w-100% my-5">
+<div class="x-center wrapper">
+    <div class="flexbox x-between y-center py-5">
+        <div class="flexbox mob:x-right mob:w-100% py-5">
             <label>
                 Show labels
                 <input
                     type="checkbox"
-                    class="switch sm c-a bg mx-2"
+                    class="switch sm c-a bg ml-2"
                     @change="toggleLabels"
                     :checked="config.areLabels"
                 />
             </label>
         </div>
-        <div class="flexbox x-right y-center my-5 mob:w-100%">
+        <div class="flexbox x-right y-center py-5 mob:w-100%">
             <div class="pointer" @click="setSize('lg')">
-                <div class="i-grid-2 m-7"></div>
+                <div class="i-grid-2 pr-7"></div>
             </div>
             <div class="pointer" @click="setSize('md')">
-                <div class="i-grid-3 m-7"></div>
+                <div class="i-grid-3 px-7"></div>
             </div>
             <div class="pointer" @click="setSize('sm')">
-                <div class="i-grid-4 m-7"></div>
+                <div class="i-grid-4 px-7"></div>
             </div>
-            <select class="form ml-6 w-fit" :value="config.sortBy" @input="setSort">
+            <select class="form ml-7 w-fit" :value="config.sortBy" @input="setSort">
                 <option>Featured</option>
                 <option>Alphabetical</option>
             </select>
         </div>
     </div>
-    <div class="flexbox">
+    <div class="flexbox m--3">
         <div
             v-for="icon in icons"
             :class="[`mob:w-${Math.round(100/mobCols)}%`, `tab:w-${Math.round(100/tabCols)}%`, `pc:w-${Math.round(100/pcCols)}%`]"
@@ -102,19 +99,19 @@ lastUpdated: false
                 </div>
             </div>
             <div class="mob:w-100% tab:w-60% m-0 p-0 pc:w-67%">
-                <div class="flexbox x-right y-center mx-7">
+                <div class="flexbox x-right y-center px-7">
                     <button
                         :data-tooltip="copyText"
                         @click="copy(activeIcon)"
                         @mouseleave="done()"
-                        class="px-7 pb-5 pointer"
+                        class="px-7 pb-6 pointer"
                     >
                         <div class="i-copy c-888 fs-5"></div>
                     </button>
                     <a
                         :href="`/icons/${activeIcon}.svg`"
                         data-tooltip="download svg"
-                        class="px-7 pb-5 pointer"
+                        class="px-7 pb-6 pointer"
                         download
                     >
                         <div class="i-download c-888 fs-5"></div>
@@ -308,6 +305,17 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+    width: calc(100vw - 48px); 
+    max-width: 1160px;
+}
+
+@media (width >= 768px) {
+    .wrapper {
+        width: calc(100vw - 80px); 
+    }
+}
+
 .switch:checked {
     background-color: #0c5 !important;
     color: #fff !important;
