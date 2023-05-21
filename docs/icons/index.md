@@ -306,13 +306,13 @@ export default {
 
 <style scoped>
 .wrapper {
-    width: calc(100vw - 48px); 
+    width: calc(100vw - 48px) !important; 
     max-width: 1160px;
 }
 
 @media (width >= 768px) {
     .wrapper {
-        width: calc(100vw - 80px); 
+        width: calc(100vw - 80px) !important; 
     }
 }
 
