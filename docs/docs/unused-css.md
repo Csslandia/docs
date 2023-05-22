@@ -2,7 +2,7 @@
 
 ---
 
-Size of minified version of Csslandia is 117kb, it’s equall to 8,936 lines of unminified CSS. It’s not a big deal to load this entire file, but if you want to remove unused CSS, you can use [PurgeCSS](https://purgecss.com/).
+Size of minified version of Csslandia is 117kb, it’s equall to 8,933 lines of unminified CSS. It’s not a big deal to load this entire file, but if you want to remove unused CSS, you can use [PurgeCSS](https://purgecss.com/).
 
 You can also use any other similar tool like [UnCSS](https://www.npmjs.com/package/uncss) or [PurifyCSS](https://www.npmjs.com/package/purify-css), but we recommend PurgeCSS.
 
