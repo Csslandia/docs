@@ -17,7 +17,7 @@
             const setMode = (mode) => {
                 if (
                     mode === "dark" ||
-                    (mode === "auto" &&
+                    (mode !== "light" &&
                         window.matchMedia("(prefers-color-scheme: dark)")
                             .matches)
                 ) {
@@ -26,6 +26,8 @@
                     document.documentElement.classList.remove("dark");
                 }
             };
+
+            console.log(mode);
 
             setMode(mode);
 
