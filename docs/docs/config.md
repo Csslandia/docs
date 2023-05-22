@@ -6,7 +6,7 @@ This option is not available via CDN.
 
 ---
 
-Add the following scripts to `package.json`.
+Add the following scripts to the `package.json`.
 
 ::: code-group
 

@@ -119,13 +119,13 @@ Percentage width is often used with [flexbox](flexbox).
 
 <div class="h-6"></div>
 
-<div class="w-50% max-w-16 bg px-8 py-7">.w-50% .max-w-16</div>
+<div class="w-60% max-w-16 bg px-8 py-7">.w-60% .max-w-16</div>
 
 ```html
-<div class="w-50% max-w-16 bg px-8 py-7">.w-50% .max-w-16</div>
+<div class="w-60% max-w-16 bg px-8 py-7">.w-60% .max-w-16</div>
 ```
 
-The width is 50% of the parent, but a maximum of 256px.
+The width is 60% of the parent, but a maximum of 256px.
 
 ## Height
 

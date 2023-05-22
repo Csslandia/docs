@@ -58,17 +58,6 @@
 ```
 
 
-## Disabled
-
-<input type="text" placeholder="Disabled" class="form" disabled />
-<div class="h-6"></div>
-<input type="text" placeholder="Disabled" class="form bd" disabled />
-
-```html
-<input type="text" placeholder="Disabled" class="form" disabled />
-<input type="text" placeholder="Disabled" class="form bd" disabled />
-```
-
 ## Another types
 
 <div class="form">

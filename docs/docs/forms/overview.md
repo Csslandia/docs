@@ -126,6 +126,16 @@
 </form>
 ```
 
+
+## Disabled
+
+<input type="text" placeholder="Disabled" class="form" disabled />
+
+```html
+<input type="text" placeholder="Disabled" class="form" disabled />
+```
+
+
 ## Verify
 
 <input type="email" value="valid@format.com" class="form verify" />

@@ -190,3 +190,7 @@ label {
 .button {
     line-height: 1.4;
 }
+
+.bg-a a {
+    color: var(--accent-c) !important;
+}
