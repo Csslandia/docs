@@ -89,26 +89,14 @@ $accent: #999;
 
 ### Accent color
 
--   value: `color`
--   default: `var(--c-strong)`
+-   value: `false | color`
+-   default: `false`
 -   in docs: `var(--bg-strong)`
 
 The text color if the element has `.bg-a` class.
 
 ```scss
-$accent-c: var(--c-strong);
-```
-
-### Light & Dark mode
-
-You can set different accent color for light and dark mode.
-
-```scss
-$light-accent: $accent;
-$light-accent-c: $accent-c;
-
-$dark-accent: $accent;
-$dark-accent-c: $accent-c;
+$accent-c: false;
 ```
 
 Check the accent color in the [colors](./utilities/colors#accent-color).
@@ -487,7 +475,7 @@ $width-height-prefixes: false;
 $color-mode: both;
 
 $accent: #999;
-$accent-c: var(--c-strong);
+$accent-c: false;
 
 $light-c-strong: #222;
 $light-c-soft: #333;
@@ -495,8 +483,6 @@ $light-bg-strong: #fff;
 $light-bg-medium: #eee;
 $light-bg-soft: #ddd;
 $light-bd: #ccc;
-$light-accent: $accent;
-$light-accent-c: $accent-c;
 
 $dark-c-strong: #fff;
 $dark-c-soft: #eee;
@@ -504,8 +490,6 @@ $dark-bg-strong: #222;
 $dark-bg-medium: #333;
 $dark-bg-soft: #444;
 $dark-bd: #555;
-$dark-accent: $accent;
-$dark-accent-c: $accent-c;
 
 $selection-bg: false;
 $selection-c: false;
