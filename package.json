@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs --host",
-    "docs:build": "csslandia && vitepress build docs",
+    "docs:dev": "csslandia && node iframe.js && vitepress dev docs --host",
+    "docs:build": "csslandia && node iframe.js && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "compile": "csslandia",
     "watch": "csslandia watch"
@@ -19,7 +19,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
-    "csslandia": "^1.0.8",
+    "csslandia": "^1.1.0",
     "vitepress": "^1.0.0-alpha.76"
   }
 }
