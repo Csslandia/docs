@@ -52,3 +52,27 @@
 <div class="marquee"></div>
 <div class="marquee slow"></div>
 ```
+
+## Direction
+
+<div class="marquee right fs-9">
+    <div>
+        <div>This is the Marquee! Moves 50% to the left every 16 seconds. You must repeat its content twice.</div>
+        <div>This is the Marquee! Moves 50% to the left every 16 seconds. You must repeat its content twice.</div>
+    </div>
+</div>
+
+```html
+<div class="marquee right">
+    <div>
+        <div>
+            This is the Marquee! Moves 50% to the left every 16 seconds. You
+            must repeat its content twice.
+        </div>
+        <div>
+            This is the Marquee! Moves 50% to the left every 16 seconds. You
+            must repeat its content twice.
+        </div>
+    </div>
+</div>
+```

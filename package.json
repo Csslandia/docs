@@ -19,7 +19,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
-    "csslandia": "^1.1.0",
+    "csslandia": "^1.1.1",
     "vitepress": "^1.0.0-alpha.76"
   }
 }

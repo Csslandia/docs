@@ -49,7 +49,7 @@ import "csslandia";
 
 ```html [HTML]
 <head>
-    <link rel="stylesheet" href="./node_modules/csslandia/style.min.css" />
+    <link rel="stylesheet" href="node_modules/csslandia/style.min.css" />
 </head>
 ```
 
