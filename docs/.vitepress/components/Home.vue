@@ -2,10 +2,7 @@
     <div class="container min-h-18" style="height: calc(100vh - 64px)">
         <div class="center z-1">
             <div class="flexbox column center">
-                <h1 class="fw-9">
-                    Welcome<br />
-                    to the land of CSS
-                </h1>
+                <h1 class="fw-9">Welcome<br />to the land of CSS</h1>
                 <p class="c-999 fw-5 pt-8 max-w-19 tagline">
                     <span class="c bold">Csslandia</span> is a free and open
                     source CSS framework carefully crafted with attention to

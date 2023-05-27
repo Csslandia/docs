@@ -1,4 +1,4 @@
 ---
 layout: home
-titleTemplate: false
+titleTemplate: Welcome to the land of CSS
 ---
